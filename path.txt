@@ -1,0 +1,1 @@
+/data/data/de.robv.android.xposed.installer/log/error.log
