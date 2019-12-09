@@ -65,6 +65,7 @@ def main():
                 print(apkname)
                 droidbot = DroidBot(app_path=apk,
                                     device_serial=device_serial,
+                                    device_ip=device_ip,
                                     is_emulator=False,
                                     output_dir=os.path.join(output_dir, apkname),
                                     env_policy=None,

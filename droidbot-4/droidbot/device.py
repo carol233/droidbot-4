@@ -25,7 +25,7 @@ class Device(object):
     this class describes a connected device
     """
 
-    def __init__(self, device_serial=None, is_emulator=False, output_dir=None,
+    def __init__(self, device_serial=None, device_ip=None, is_emulator=False, output_dir=None,
                  cv_mode=False, grant_perm=False, telnet_auth_token=None,
                  enable_accessibility_hard=False, humanoid=None, ignore_ad=False):
         """
@@ -46,6 +46,7 @@ class Device(object):
         if "emulator" in device_serial and not is_emulator:
             self.logger.warning("Seems like you are using an emulator. If so, please add is_emulator option.")
         self.serial = device_serial
+        self.ip = device_ip
         self.is_emulator = is_emulator
         self.cv_mode = cv_mode
         self.output_dir = output_dir

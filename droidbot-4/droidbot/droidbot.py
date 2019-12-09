@@ -25,6 +25,7 @@ class DroidBot(object):
     def __init__(self,
                  app_path=None,
                  device_serial=None,
+                 device_ip=None,
                  is_emulator=False,
                  output_dir=None,
                  env_policy=None,
@@ -86,6 +87,7 @@ class DroidBot(object):
         try:
             self.device = Device(
                 device_serial=device_serial,
+                device_ip=device_ip,
                 is_emulator=is_emulator,
                 output_dir=self.output_dir,
                 cv_mode=cv_mode,

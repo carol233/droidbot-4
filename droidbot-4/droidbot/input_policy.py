@@ -488,9 +488,7 @@ class UtgGreedySearchPolicy(UtgBasedInputPolicy):
                             if int(size[0]) > 100 or int(size[1]) > 100:
                                 self.logger.info("Trying an AD event.")
                                 self.__event_trace += EVENT_FLAG_EXPLORE
-                                ip = self.device.serial
-                                if ip == "083976092131fe5d":
-                                    ip = "192.168.1.116"
+                                ip = self.device.ip
                                 output_dir = self.device.output_dir
                                 apkname = output_dir.split('/')[-1]
                                 cfg = os.path.abspath(os.path.dirname(os.getcwd())) + '/cfg.txt'
@@ -523,9 +521,7 @@ class UtgGreedySearchPolicy(UtgBasedInputPolicy):
                 self.logger.info("Trying an unexplored event.")
                 self.__event_trace += EVENT_FLAG_EXPLORE
                 event = input_event.get_event_str(self.current_state)
-                ip = self.device.serial
-                if ip == "083976092131fe5d":
-                    ip = "192.168.1.116"
+                ip = self.device.ip
                 output_dir = self.device.output_dir
                 apkname = output_dir.split('/')[-1]
                 cfg = os.path.abspath(os.path.dirname(os.getcwd())) + '/cfg.txt'
