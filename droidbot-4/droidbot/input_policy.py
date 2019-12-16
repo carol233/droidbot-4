@@ -522,6 +522,7 @@ class UtgGreedySearchPolicy(UtgBasedInputPolicy):
                 self.__event_trace += EVENT_FLAG_EXPLORE
                 event = input_event.get_event_str(self.current_state)
                 ip = self.device.ip
+
                 output_dir = self.device.output_dir
                 apkname = output_dir.split('/')[-1]
                 cfg = os.path.abspath(os.path.dirname(os.getcwd())) + '/cfg.txt'
