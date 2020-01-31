@@ -18,11 +18,11 @@ else:
     from SimpleXMLRPCServer import SimpleXMLRPCServer
     from SimpleXMLRPCServer import SimpleXMLRPCRequestHandler
 
-from device import Device
-from app import App
+from .device import Device
+from .app import App
 
-from adapter.droidbot import DroidBotConn
-from adapter.qemu import QEMUConn
+from .adapter.droidbot import DroidBotConn
+from .adapter.qemu import QEMUConn
 
 class RPCHandler(SimpleXMLRPCRequestHandler):
     def _dispatch(self, method, params):

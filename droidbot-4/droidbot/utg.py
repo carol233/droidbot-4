@@ -5,7 +5,7 @@ import random
 import datetime
 import networkx as nx
 
-from utils import list_to_html_table
+from .utils import list_to_html_table
 
 
 class UTG(object):

@@ -1,7 +1,7 @@
 import logging
 import subprocess
 
-from adapter import Adapter
+from .adapter import Adapter
 
 
 class DroidBotConnException(Exception):

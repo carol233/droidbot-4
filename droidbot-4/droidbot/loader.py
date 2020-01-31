@@ -1,10 +1,6 @@
-#######
-#author : tmliu
-#date: 2018.05.30
-#######
-
 import os
-from droidbot import DroidBot
+from .droidbot import DroidBot
+from .global_config import *
 
 
 def diff(a, b):
@@ -118,6 +114,12 @@ if __name__ == "__main__":
                     continue
                 if 'ip_pkg' in line:
                     ip_pkg = line.strip('\n').split('=')[-1]
+                    continue
+                if 'DARKNET_DIR' in line:
+                    DARKNET_DIR = line.strip('\n').split('=')[-1]
+                    continue
+                if 'Prediction_dir' in line:
+                    Prediction_dir = line.strip('\n').split('=')[-1]
                     continue
         # os.system("adb connect "+device_serial)
         # os.system('adb -s '+device_serial + " root")

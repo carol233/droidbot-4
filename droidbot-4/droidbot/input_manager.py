@@ -3,8 +3,8 @@ import logging
 import subprocess
 import time
 
-from input_event import EventLog
-from input_policy import UtgBasedInputPolicy, UtgNaiveSearchPolicy, UtgGreedySearchPolicy, \
+from .input_event import EventLog
+from .input_policy import UtgBasedInputPolicy, UtgNaiveSearchPolicy, UtgGreedySearchPolicy, \
                          UtgReplayPolicy, \
                          ManualPolicy, \
                          POLICY_NAIVE_DFS, POLICY_GREEDY_DFS, \

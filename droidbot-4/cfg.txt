@@ -1,7 +1,10 @@
-root_path=G:/Ad/
-app_path=G:/Ad/in/
+root_path=/Users/yzha0544/PycharmProjects/Ad/
+app_path=/Users/yzha0544/PycharmProjects/Ad/in/
 device_serial=083976092131fe5d
 device_ip=49.127.18.12
-output_dir=G:/Ad/out/
-ip_pkg=G:/Ad/pkg.txt
-traffic=G:/Ad/traffic/
+output_dir=/Users/yzha0544/PycharmProjects/Ad/out/
+ip_pkg=/Users/yzha0544/PycharmProjects/Ad/pkg.txt
+traffic=/Users/yzha0544/PycharmProjects/Ad/traffic/
+
+DARKNET_DIR=/Users/yzha0544/darknet/
+Prediction_dir=Prediction/

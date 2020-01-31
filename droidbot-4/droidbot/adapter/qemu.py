@@ -2,7 +2,7 @@ import logging
 import subprocess
 import telnetlib
 import time
-from adapter import Adapter
+from .adapter import Adapter
 
 
 QEMU_START_DELAY = 60
